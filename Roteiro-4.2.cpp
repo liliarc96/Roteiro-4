@@ -9,7 +9,7 @@ int main()
       int chute;
       int maior = 100;
       int menor = 1;
-      int aleatorio = rand()% 100;
+      int aleatorio = rand() % 100 + 1; 
 
       cout<< "Adivinhe um numero entre 1 e 100";
       cin>> chute;

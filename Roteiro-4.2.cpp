@@ -7,9 +7,9 @@ int main()
 {
       srand((unsigned)time(0));
       int chute;
-      int aleatorio = rand() % 100 + 1; 
+      int aleatorio = rand() % 100 + 1;
 
-      cout<< "Adivinhe um numero entre 1 e 100";
+      cout<< "Adivinhe um numero entre 1 e 100\n";
       cin>> chute;
 
       while (chute != aleatorio)
@@ -18,11 +18,15 @@ int main()
           {
               if (chute > aleatorio)
               {
-                  cout<< "Muito alto. Tente novamente";
+                  cout<< "Muito alto. Tente novamente\n";
+                  cout<< "Adivinhe um numero entre 1 e 100\n";
+                  cin>> chute;
               }
               else
               {
-                  cout<< "Muito baixo. Tente novamente";
+                  cout<< "Muito baixo. Tente novamente\n";
+                  cout<< "Adivinhe um numero entre 1 e 100\n";
+                  cin>> chute;
               }
           }
       }
